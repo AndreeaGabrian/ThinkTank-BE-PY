@@ -43,8 +43,8 @@ async def top_headlines_sources():
             articles.append(new_article)
 
         # Write the data to a JSON file
-        with open('output.json', "w") as json_file:
-            json.dump(articles, json_file, indent=2)
+        # with open('output.json', "w") as json_file:
+        #     json.dump(articles, json_file, indent=2)
         insert_multiple_news(articles)
         # return {"articles": articles}
         return True
